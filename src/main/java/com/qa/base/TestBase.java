@@ -14,8 +14,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.log4testng.Logger;
 
-import com.crm.qa.utilities.SeleniumActions;
-import com.crm.qa.utilities.TestUtils;
+import com.qa.utilities.SeleniumActions;
+import com.qa.utilities.TestUtils;
 import com.qa.utilities.WebDriverListener;
 
 public class TestBase {

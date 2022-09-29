@@ -4,7 +4,7 @@ import net.serenitybdd.core.steps.UIInteractionSteps;
 import net.thucydides.core.annotations.Step;
 import org.openqa.selenium.support.ui.Select;
 
-import static com.serenityui.challenge.utils.customerdata.CustomDataGenerator.customerDataDTO;
+import static com.qa.utilities.CustomDataGenerator.customerDataDTO;
 
 public class CreateAccountPageActions extends UIInteractionSteps {
 

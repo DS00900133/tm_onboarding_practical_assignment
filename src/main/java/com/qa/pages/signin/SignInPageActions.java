@@ -1,6 +1,6 @@
 package com.qa.pages.signin;
 
-import com.serenityui.challenge.utils.testdata.LoadTestData;
+import com.qa.utilities.LoadTestData;
 import net.serenitybdd.core.steps.UIInteractionSteps;
 import net.thucydides.core.annotations.Step;
 

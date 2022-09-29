@@ -12,7 +12,7 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.core.Serenity;
 import net.thucydides.core.annotations.Steps;
 
-import static com.serenityui.challenge.utils.customerdata.CustomDataGenerator.customerDataDTO;
+import static com.qa.utilities.CustomDataGenerator.customerDataDTO;
 
 public class UserSignUpSteps {
 

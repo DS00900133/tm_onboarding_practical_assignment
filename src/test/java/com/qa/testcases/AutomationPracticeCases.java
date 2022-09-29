@@ -4,7 +4,7 @@ import com.qa.pages.homepage.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import com.crm.qa.base.TestBase;
+import com.qa.base.TestBase;
 import com.google.common.base.Verify;
 
 public class AutomationPracticeCases extends TestBase {
@@ -29,22 +29,6 @@ public class AutomationPracticeCases extends TestBase {
 	public void TC001_CheckifLogoisPresent() {
 		boolean flag = homepage.isLogoDisplayed();
 		Assert.assertTrue(flag);
-	}
-
-	@Test(groups = { "Functionality" })
-	public void TC002_SelectFlightOption() {
-		homepage.selectFlightOption();
-	}
-
-	@Test(groups = { "Simple", "UI" })
-	public void TC003_CheckifLogoisPresent() {
-		boolean flag = homepage.isLogoDisplayed();
-		Assert.assertTrue(flag);
-	}
-
-	@Test
-	public void TC004_SelectFlightOption() {
-		homepage.selectFlightOption();
 	}
 
 	@AfterSuite(alwaysRun = true)

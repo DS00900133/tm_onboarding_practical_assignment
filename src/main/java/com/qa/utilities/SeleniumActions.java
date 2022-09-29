@@ -1,4 +1,4 @@
-package com.crm.qa.utilities;
+package com.qa.utilities;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
