@@ -1,4 +1,4 @@
-package com.crm.qa.utilities;
+package com.qa.utilities;
 
 import java.io.File;
 import java.io.IOException;

@@ -3,7 +3,7 @@ package com.crm.qa.utilities;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import com.crm.qa.base.TestBase;
+import com.qa.base.TestBase;
 
 public class SeleniumActions extends TestBase {
 

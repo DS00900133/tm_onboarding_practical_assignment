@@ -1,4 +1,4 @@
-package com.crm.qa.utilities;
+package com.qa.utilities;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;

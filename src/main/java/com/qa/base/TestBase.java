@@ -1,4 +1,4 @@
-package com.crm.qa.base;
+package com.qa.base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -16,7 +16,7 @@ import org.testng.log4testng.Logger;
 
 import com.crm.qa.utilities.SeleniumActions;
 import com.crm.qa.utilities.TestUtils;
-import com.crm.qa.utilities.WebDriverListener;
+import com.qa.utilities.WebDriverListener;
 
 public class TestBase {
 
@@ -28,16 +28,13 @@ public class TestBase {
 	protected static ChromeOptions chromeOptions;
 	protected static Logger log;
 
-	/*
-	 * protected ITestResult result; protected ExtentReports extent; protected
-	 * ExtentTest extentTest;
-	 */
+
 	public TestBase() {
 
 		try {
 			properties = new Properties();
 			FileInputStream ip = new FileInputStream(
-					System.getProperty("user.dir") + "/src/main/java/com/crm/qa/config/config.properties");
+					System.getProperty("user.dir") + "/src/main/java/com/qa/config/config.properties");
 			properties.load(ip);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -79,7 +76,7 @@ public class TestBase {
 			chromeOptions.addArguments("--start-maximized");
 			return new ChromeDriver(chromeOptions);
 		} else if (browserName.equalsIgnoreCase("FF")) {
-			System.setProperty("webdriver.gecko.driver", "C://Users/Gorya/Desktop/Krishna_study/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", TestUtils.WORKSAPCE_PATH + "//drivers//gecko.exe");
 			return new FirefoxDriver();
 		} else if (browserName.equalsIgnoreCase("IE")) {
 			System.setProperty("webdriver.ie.driver", TestUtils.WORKSAPCE_PATH + "//drivers//IEDriverServer.exe");
@@ -92,30 +89,4 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.close();
 	}
-
-	/*
-	 * public void setExtend() { extent = new
-	 * ExtentReports(System.getProperty("user.dir") +
-	 * "//test-output//+NewExtentReport.html", true); Map<String, String> info = new
-	 * HashMap<String, String>(); info.put("host name", "Krishna Windows");
-	 * info.put("user name", "Krishna"); info.put("Environment", "QA");
-	 * 
-	 * extent.addSystemInfo(info);
-	 * 
-	 * }
-	 * 
-	 * public void FormatResult() { if (result.getStatus() == ITestResult.FAILURE) {
-	 * extentTest.log(LogStatus.FAIL, "Failed test case is ::" + result.getName());
-	 * extentTest.log(LogStatus.FAIL, "Failed test case is ::" +
-	 * result.getThrowable()); TestUtils.takeScreenShot(driver);
-	 * extentTest.log(LogStatus.FAIL,
-	 * extentTest.addScreenCapture(TestUtils.SCREENSHOT_PATH)); } else if
-	 * (result.getStatus() == ITestResult.SKIP) { extentTest.log(LogStatus.SKIP,
-	 * "Skipped test case is ::" + result.getName()); } else if (result.getStatus()
-	 * == ITestResult.SUCCESS) { extentTest.log(LogStatus.PASS,
-	 * "Passed testc case is ::" + result.getName()); }
-	 * 
-	 * extent.endTest(extentTest);
-	 * 
-	 * }
-	 */}
+}

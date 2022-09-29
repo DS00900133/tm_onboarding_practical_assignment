@@ -1,5 +1,6 @@
-package com.crm.qa.testcases;
+package com.qa.testcases;
 
+import com.qa.pages.homepage.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.*;
 

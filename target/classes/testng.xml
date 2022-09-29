@@ -11,7 +11,7 @@
 	<test name="Testing">
 		<!-- <groups> <run> <exclude name = "Functionality" /> </run> </groups> -->
 		<classes>
-			<class name="com.qa.testcases.AutomationPractice"></class>
+			<class name="com.crm.qa.testcases.AutomationPractice"></class>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
