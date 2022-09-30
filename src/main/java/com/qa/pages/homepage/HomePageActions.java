@@ -1,8 +1,6 @@
 package com.qa.pages.homepage;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.internal.WrapsElement;
-import net.serenitybdd.core.pages;
+import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.core.steps.UIInteractionSteps;
 import net.thucydides.core.annotations.Step;
 import org.openqa.selenium.support.ui.ExpectedConditions;
